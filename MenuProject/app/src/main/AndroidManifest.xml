@@ -2,13 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.frain.myapplication">
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
         <activity
-            android:name=".ReviewFourthProject.activity.TodayNewsActivity"
+            android:name=".ViewPageAndFragment.ViewPagerFragmentActivity"
             android:configChanges="orientation|screenSize">
 
             <intent-filter>
@@ -37,6 +37,7 @@
         </activity>
         <activity android:name=".ReviewFourthProject.activity.NewsDetailsActivity"/>
         <activity android:name=".ReviewFourthProject.activity.ChannelManagerActivity"/>
+        <activity android:name=".Fragment.WeiXinMainActivity"/>
     </application>
 
 </manifest>

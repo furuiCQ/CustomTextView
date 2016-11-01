@@ -68,6 +68,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:text="时间" />
+        <Button
+            android:id="@+id/nihao_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好"/>
 
     </LinearLayout>
 
