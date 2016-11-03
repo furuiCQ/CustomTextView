@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击动画改变TextView"/>
+    <Button
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Value Animator"/>
+    <TextView
+        android:id="@+id/textview_e"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:text="E"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textStyle="bold"
+        android:background="@drawable/e_light"/>
+    <TextView
+        android:id="@+id/show_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Touch To Start"/>
+</LinearLayout>
