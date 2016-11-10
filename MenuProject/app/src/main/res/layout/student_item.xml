@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+   >
+
+    <TextView
+        android:id="@+id/stu_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="10"/>
+
+    <TextView
+        android:id="@+id/stu_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="zhang"
+        android:layout_weight="1"/>
+    
+    <TextView
+        android:id="@+id/stu_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:text="20"/>
+</LinearLayout>
