@@ -14,13 +14,11 @@ public class StudentProvider extends ContentProvider{
 	public static final String TAG = "StudentProvider";
 	//授权一般使用包名加类名，见名知义的名字
 	public static final String 	AUTHORITY = "com.twentythree.myandroidlearn.database.provider.StudentProvider";
-	
 	//定义URI
 	public static final Uri STUDENT_URI = Uri.parse("content://" + AUTHORITY + "/student");
 	public static final Uri COURSE_URI = Uri.parse("content://" + AUTHORITY + "/course");
 	public static final Uri CHOICE_COURSE_URI = Uri.parse("content://" + AUTHORITY + "/choice_course");
 	public static final Uri STUDENT_CHOICE_COURSE_URI = Uri.parse("content://" + AUTHORITY + "/student_choice_course");
-	
 	//定义匹配码
 	public static final int STUDENT_CODE = 0;
 	public static final int STUDENT_ITEM_CODE = 1;
@@ -30,9 +28,7 @@ public class StudentProvider extends ContentProvider{
 	public static final int CHOICE_COURSE_ITEM_CODE = 5;
 	public static final int STUDENT_CHOICE_COURSE_CODE = 6;
 	public static final int STUDENT_CHOICE_COURSE_ITEM_CODE = 7;
-	
 	UriMatcher matcher = new UriMatcher(UriMatcher.NO_MATCH);
-	
 	{
 		//# 匹配数字 *匹配所有的字符
 		matcher.addURI(AUTHORITY, "student", STUDENT_CODE);
@@ -50,8 +46,6 @@ public class StudentProvider extends ContentProvider{
 
 	SQLiteDatabase database;
 	StudentHelper helper;
-	
-
 	/**
 	 * 创建
 	 */
@@ -84,7 +78,6 @@ public class StudentProvider extends ContentProvider{
 		}
 		return "*/*";
 	}
-
 	/**
 	 * uri 
 	 * values 键值对

@@ -6,7 +6,6 @@ import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -15,8 +14,6 @@ import android.widget.EditText;
 import android.widget.TimePicker;
 
 import com.frain.myapplication.R;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Date;
 

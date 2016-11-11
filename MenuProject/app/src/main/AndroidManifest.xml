@@ -13,7 +13,7 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
         <activity
-            android:name=".ContentProvider.UriDemoActivity"
+            android:name=".SixTestDemo.FristActivity"
             android:configChanges="orientation|screenSize">
 
             <intent-filter>
@@ -34,11 +34,20 @@
         <activity android:name=".PropertyAnimation.ValueAnimatorTwoActivity"/>
         <activity android:name=".PropertyAnimation.TouchAnimationActivity"/>
         <activity android:name=".SharePreference.BeiWangLuEditActivity"/>
-        <activity android:name=".MySqlite.AccountsPractice.InComeActivity"/><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
-        <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+        <activity android:name=".MySqlite.AccountsPractice.InComeActivity"/>
+        <!--<receiver android:name=".BroadcastReceiver.MyBroadCastRecevier">-->
+            <!--<intent-filter>-->
+                  <!--<action android:name="www.baidu.com.play"/>-->
+                  <!--<action android:name="www.baidu.com.stop"/>-->
+                  <!--<action android:name="www.baidu.com.resume"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <provider
+            android:name=".ContentProvider.TestContentProvider.StudentProvider"
+            android:authorities="com.twentythree.myandroidlearn.database.provider.StudentProvider"
+            />
+
     </application>
+    
 
 </manifest>
