@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Socket.SocketDemoActivity"
+            android:name=".WebView.DongTaiZhuRuActivity"
             android:configChanges="orientation|screenSize">
 
             <intent-filter>
